@@ -1,2 +1,52 @@
 *.tmp
 *.min
+*~
+*.swp
+*.swo
+*.temp
+*.bak
+.DS_Store
+
+# Local secrets and environment files
+.env*
+!.env.example
+credentials/
+*.credentials
+*.secret
+*.token
+*.pem
+*.key
+*.p12
+*.pfx
+*.crt
+id_*
+
+# ZMK and Zephyr build output
+build/
+**/build/
+.west/
+**/.west/
+.zmk/
+zephyr/.config
+zephyr/.config.*
+*.elf
+*.hex
+*.uf2
+*.bin
+*.map
+*.lst
+*.dts.pre
+
+# Caches and local environments
+.cache/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+env/
+
+# Generated personal diagrams
+README/personal/
