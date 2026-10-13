@@ -31,6 +31,9 @@ For your reference, here are my personal customizations on top of the defaults:
 See [interactive layer map][map] for overview and documentation.
 >NOTE: This is also available as a [printable PDF document][pdf].
 
+For this fork's personal PDF variants and rebuild instructions, see the
+[personal layer-diagram workflow](PERSONAL.md).
+
 See [release notes][rel] for a visual overview of recent updates.
 
 [map]: https://sunaku.github.io/moergo-glove80-keyboard.html#layers

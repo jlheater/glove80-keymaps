@@ -48,5 +48,5 @@ __pycache__/
 venv/
 env/
 
-# Generated personal diagrams
-README/personal/
+# Personal diagram sources and combined PDFs are tracked.
+# See README/personal/.gitignore for ignored build intermediates.
