@@ -36,10 +36,10 @@ The checked-in files start as copies of the upstream QWERTY diagram so the
 workflow is runnable immediately. Replace them with your own KLE export and
 capture after customizing the layout.
 
-The QWERTY JSON, manually captured light PNG, and eight combined PDFs below
-are tracked in Git. Generated dark PNGs (`*.dark.png`) and individual page
-PDFs (`*.page.pdf`) are ignored build intermediates. Regenerate the combined
-PDFs with Rake after diagram changes, then commit them with their sources.
+The QWERTY JSON and manually captured light PNG are tracked in Git. Generated
+dark PNGs (`*.dark.png`), individual page PDFs (`*.page.pdf`), and the eight
+combined PDFs below are ignored build outputs. Regenerate the combined PDFs
+with Rake whenever you need them.
 
 To update the custom diagram:
 
@@ -69,7 +69,7 @@ Lower, Magic, Factory, World, Emoji, Typing. Its light variant follows the
 upstream functional-layer order used by `all`. The other variants use the
 same page order in both themes.
 
-The committed outputs are:
+The generated (untracked) outputs are:
 
 ```text
 README/personal/all-layer-diagrams.pdf
@@ -104,9 +104,8 @@ The workflow requires Ruby, Rake, GraphicsMagick (`gm`), and Poppler's
 
 `rake clean` removes generated dark PNGs and individual page PDFs.
 `rake clobber` also removes the eight combined personal PDFs. Neither command
-removes the custom JSON or manually captured light PNG. Because the combined
-PDFs are tracked, run `rake personal:pdf` after `rake clobber` to restore them
-before committing.
+removes the custom JSON or manually captured light PNG. Run
+`rake personal:pdf` after `rake clobber` to rebuild the combined PDFs.
 
 ## After upstream merges
 
