@@ -1,0 +1,6 @@
+# Generated dark screenshots and individual per-page PDFs.
+*.dark.png
+*.page.pdf
+# Combined layer-diagram PDFs (rebuild with `rake personal:pdf`).
+/*-layer-diagrams.pdf
+/*-layer-diagrams-dark.pdf
